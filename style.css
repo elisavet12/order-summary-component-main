@@ -1,0 +1,153 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  margin: 0px;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 100%;
+  justify-content: center;
+  background-color: var(--Pale-blue);
+}
+
+main {
+  padding: 100px 495px;
+  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order {
+  background-color: white;
+  border-radius: 18px;
+}
+
+.order-image {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.order-info {
+  padding: 25px 78px;
+  margin: 0px;
+}
+
+.order-title {
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--Dark-blue);
+  text-align: center;
+  margin: 0px;
+  padding: 25px 0px 15px 0px;
+}
+
+.order-excerpt {
+  color: var(--Desaturated-blue);
+  text-align: center;
+  width: 28ch;
+  padding: 15px 0px 25px 0px;
+  margin: 0px;
+}
+
+.order-payment {
+}
+
+.payment-details {
+  padding: 0px 50px;
+  margin-bottom: 30px;
+}
+
+.details-plan {
+  padding: 0px 25px;
+  background-color: var(--Pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+}
+
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 0px;
+}
+
+.payment-link {
+  display: flex;
+}
+
+.payment-info-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--Dark-blue);
+  margin: 0px;
+  margin-bottom: 12px;
+}
+
+.payment-info-price {
+  margin: 0px;
+  color: var(--Desaturated-blue);
+}
+
+.payment-image {
+  border-radius: 50%;
+  filter: grayscale(1);
+  filter: brightness(0.9);
+}
+
+.payment-link {
+  font-size: 15px;
+  color: var(--Bright-blue);
+  cursor: pointer;
+}
+
+.payment-link:hover {
+  color: var(--Desaturated-blue);
+  text-decoration: none;
+}
+
+.proceed {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px;
+}
+
+.order-button {
+  height: 48px;
+  padding: 0px 100px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--Bright-blue);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0px 5px 10px hsl(223, 47%, 23%);
+}
+
+.order-button:hover {
+  background-color: var(--Desaturated-blue);
+}
+
+.order-cancellation {
+  padding: 30px 50px 50px 50px;
+  text-align: center;
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.order-cancellation:hover {
+  color: var(--Dark-blue);
+}
