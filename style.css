@@ -13,6 +13,7 @@ body {
   box-sizing: border-box;
   height: 100vh;
   background-image: url(./images/pattern-background-desktop.svg);
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
   min-height: 100%;
@@ -33,6 +34,8 @@ main {
 .order {
   background-color: white;
   border-radius: 18px;
+  width: 100%;
+  max-width: 448px;
 }
 
 .order-image {
@@ -59,7 +62,8 @@ main {
 .order-excerpt {
   color: var(--Desaturated-blue);
   text-align: center;
-  width: 28ch;
+  width: 100%;
+  max-width: 28ch;
   padding: 15px 0px 25px 0px;
   margin: 0px;
 }
@@ -153,7 +157,11 @@ main {
   color: var(--Dark-blue);
 }
 
-@media only screen and (max-width: 1105px) {
+@media only screen and (max-width: 437px) {
+  .order-button {
+    padding: 0px 90px;
+  }
+
   @media only screen and (max-width: 375px) {
     body {
     }
@@ -165,7 +173,8 @@ main {
     }
 
     .order-image {
-      width: 327px;
+      /* width: 100%;
+      max-width: 375px; */
     }
     .order-info {
       padding: 19px 40px;
@@ -197,7 +206,7 @@ main {
     }
 
     .order-button {
-      padding: 0px 64px;
+      padding: 0px 40px;
     }
   }
 }
